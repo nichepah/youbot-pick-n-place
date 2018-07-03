@@ -1,0 +1,8 @@
+<launch>
+
+  <include file="$(find youbot_moveit_config)/launch/youbot_moveit_real.launch"/>
+
+  <node name="youbot_pick_n_place_v1" pkg="youbot_pick_n_place" type="youbot_pick_n_place_v1" respawn="false" output="screen">
+  </node>
+
+</launch>
